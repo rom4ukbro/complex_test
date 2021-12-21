@@ -10,7 +10,7 @@ const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
 
 console.log(MONGO_DB, MONGO_USER, MONGO_PASSWORD);
 
-const uri = `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster0.m6uw9.mongodb.net/${MONGO_DB}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster.5pkto.mongodb.net/${MONGO_DB}?retryWrites=true&w=majority`;
 
 @Module({
   imports: [MongooseModule.forRoot(uri), UsersModule],

@@ -76,9 +76,9 @@ export class UsersController {
   @Delete('delete')
   @ApiQuery({ name: 'email' })
   @ApiResponse({
-    status: HttpStatus.OK,
+    status: HttpStatus.NO_CONTENT,
     description: 'User deleted',
-    type: UserDto,
+    type: Boolean,
   })
   @ApiResponse({
     status: HttpStatus.NOT_FOUND,
